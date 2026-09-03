@@ -10,7 +10,7 @@ import WelcomeScreen from "@/components/WelcomeScreen";
 import FrontendDeveloperSection from "@/components/FrontendDeveloperSection";
 import Showcase from "./components/Showcase";
 import ContactSection from "@/components/ContactSection";
-import KineticGridSection from "@/components/KineticGridSection";
+import KineticGrid from "@/components/ui/kinetic-grid";
 import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 
@@ -125,7 +125,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={
-        <div className="min-h-screen bg-black text-white overflow-x-hidden">
+        <KineticGrid globalColor="default" className="min-h-screen overflow-x-hidden">
           {/* Top Ambient Scroll Progress Indicator */}
           <motion.div
             style={{ scaleX }}
@@ -159,13 +159,6 @@ export default function App() {
                 className="relative hover:text-white transition-colors cursor-pointer after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
               >
                 About
-              </li>
-
-              <li
-                onClick={() => scrollTo("#interactive")}
-                className="relative hover:text-white transition-colors cursor-pointer after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
-              >
-                Playground
               </li>
 
               <li
@@ -231,16 +224,6 @@ export default function App() {
 
               <button
                 onClick={() => {
-                  scrollTo("#interactive");
-                  setMobileMenu(false);
-                }}
-                className="relative after:absolute after:left-0 after:-bottom-2 after:h-[1px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
-              >
-                Playground
-              </button>
-
-              <button
-                onClick={() => {
                   scrollTo("#showcase");
                   setMobileMenu(false);
                 }}
@@ -263,7 +246,7 @@ export default function App() {
 
           <section
             id="Home"
-            className="relative w-full h-screen min-h-[640px] overflow-hidden bg-black"
+            className="relative w-full h-screen min-h-[640px] overflow-hidden bg-transparent"
           >
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <img
@@ -331,7 +314,7 @@ animate-[shine_4s_linear_infinite]">
             </div>
           </section>
 
-          <div className="bg-black border-t border-white/10 py-5 overflow-hidden">
+          <div className="bg-black/60 backdrop-blur-md border-t border-white/10 py-5 overflow-hidden">
             <div className="flex items-center gap-16 animate-marquee whitespace-nowrap">
               {[...logos, ...logos, ...logos].map((logo, i) => (
                 <span
@@ -358,14 +341,13 @@ animate-[shine_4s_linear_infinite]">
           <section id="about">
             <FrontendDeveloperSection />
           </section>
-          <KineticGridSection />
           <section id="showcase">
             <Showcase />
           </section>
           <section id="contact">
             <ContactSection />
           </section>
-        </div>
+        </KineticGrid>
       } 
     />
 

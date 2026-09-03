@@ -38,20 +38,9 @@ export default function ContactSection() {
 
     return (
         <section
-            className="relative w-full min-h-screen bg-black overflow-hidden
+            className="relative w-full min-h-screen bg-transparent overflow-hidden
             px-4 sm:px-8 md:px-16 lg:px-24 py-24 text-white"
         >
-            {/* premium grid background */}
-            <div
-                className="absolute inset-0 opacity-[0.04] pointer-events-none"
-                style={{
-                    backgroundImage: `
-                    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)
-                    `,
-                    backgroundSize: "40px 40px",
-                }}
-            />
 
             {/* background glow */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">

@@ -154,7 +154,7 @@ export default function KineticGrid({
 
       const theme = {
         default: {
-          bg: "#09090b",
+          bg: "#000000",
           lineActive: { r: 56, g: 189, b: 248, a: 0.9 },
           nodeActive: { r: 56, g: 189, b: 248, a: 1.0 },
           glow: "56,189,248",
@@ -331,9 +331,8 @@ export default function KineticGrid({
     if (!canvas) return;
 
     const setSize = () => {
-      const parent = canvas.parentElement;
-      const w = parent ? parent.clientWidth : window.innerWidth;
-      const h = parent ? parent.clientHeight : window.innerHeight;
+      const w = window.innerWidth;
+      const h = window.innerHeight;
       canvas.width = w;
       canvas.height = h;
       sizeRef.current = { w, h };
@@ -347,15 +346,13 @@ export default function KineticGrid({
     window.addEventListener("resize", setSize);
 
     const onMouseMove = (e: MouseEvent) => {
-      const rect = canvas.getBoundingClientRect();
-      targetMouseRef.current = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+      targetMouseRef.current = { x: e.clientX, y: e.clientY };
     };
 
     const onClick = (e: MouseEvent) => {
-      const rect = canvas.getBoundingClientRect();
       ripplesRef.current.push({
-        x: e.clientX - rect.left,
-        y: e.clientY - rect.top,
+        x: e.clientX,
+        y: e.clientY,
         radius: 0,
         opacity: 1,
         born: performance.now(),
@@ -381,17 +378,16 @@ export default function KineticGrid({
   return (
     <div
       className={cn(
-        "relative w-full min-h-screen overflow-hidden",
-        globalColor === "monochrome" ? "bg-[#000000]" : "bg-[#09090b]",
+        "relative w-full min-h-screen bg-black text-white",
         className,
       )}
     >
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+        className="fixed inset-0 w-full h-full z-0 pointer-events-none"
       />
 
-      <div className="relative z-10 w-full h-full">{children}</div>
+      <div className="relative z-10 w-full">{children}</div>
     </div>
   );
 }
