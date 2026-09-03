@@ -125,8 +125,8 @@ export default function FrontendDeveloperSection() {
     from-white via-white/60 to-white
     animate-[shine_4s_linear_infinite]"
         >
-          Building modern websites with clean, responsive, elegant interfaces.
-          Turning ideas and designs into engaging digital experiences.
+          Student & Frontend Developer based in Selangor, Malaysia.
+          Crafting responsive and elegant web interfaces. Pull Yourself Together.
         </motion.p>
 
         <motion.div
@@ -135,7 +135,7 @@ export default function FrontendDeveloperSection() {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-6 flex flex-wrap gap-4"
         >
-          {["Next.js", "React.js", "TypeScript", "Tailwind CSS"].map((tech) => (
+          {["JavaScript", "TypeScript", "Tailwind CSS", "Next.js", "Python"].map((tech) => (
             <div
               key={tech}
               className="

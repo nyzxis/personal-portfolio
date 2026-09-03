@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { FaInstagram, FaGithub, FaYoutube, FaTelegram } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaDiscord, FaTiktok } from "react-icons/fa";
 
 
 export default function ContactSection() {
@@ -26,7 +26,7 @@ export default function ContactSection() {
 
         const text = `Hello, my name is ${form.name}%0A%0A${form.message}`;
 
-        const phone = "91000000000";
+        const phone = "60173326452";
 
         window.open(
             `https://wa.me/${phone}?text=${text}`,
@@ -148,7 +148,7 @@ export default function ContactSection() {
 
                             {/* gmail */}
                             <a
-                                href="mailto:sprince05873@gmail.com"
+                                href="mailto:itznbdyz@gmail.com"
                                 className="group relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl
                 border border-white/10
                 bg-white/[0.04]
@@ -178,7 +178,7 @@ export default function ContactSection() {
 
                             {/* whatsapp */}
                             <a
-                                href="https://wa.me/910000000000"
+                                href="https://wa.me/60173326452"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl
@@ -534,7 +534,7 @@ export default function ContactSection() {
                     <div className="flex flex-wrap items-center justify-center gap-5">
                         {/* Instagram */}
                         <a
-                            href="https://www.instagram.com/prince_kumar_74_"
+                            href="https://www.instagram.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Instagram"
@@ -544,7 +544,6 @@ export default function ContactSection() {
     transition-all duration-500 ease-out
     hover:-translate-y-1.5 hover:scale-105 hover:border-white/30"
                         >
-                            {/* YOUR INSTAGRAM GRADIENT */}
                             <div
                                 className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                                 style={{
@@ -552,20 +551,14 @@ export default function ContactSection() {
                                         "linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7)",
                                 }}
                             />
-
-                            {/* inner dark glass */}
                             <div className="absolute inset-[1px] rounded-[19px] bg-[#0b0b12]/80" />
-
-                            {/* glow */}
                             <div className="absolute -inset-6 blur-2xl transition-all duration-500 group-hover:bg-white/10" />
-
-                            {/* icon */}
                             <FaInstagram className="relative z-10 text-[30px] text-white transition-all duration-500 group-hover:scale-110 group-hover:text-white" />
                         </a>
 
                         {/* GitHub */}
                         <a
-                            href="https://github.com/princekumar-dev74"
+                            href="https://github.com/nyzxis"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub"
@@ -578,46 +571,43 @@ export default function ContactSection() {
                             <div className="absolute inset-0 bg-gradient-to-br from-white/16 via-slate-300/8 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                             <div className="absolute inset-[1px] rounded-[19px] bg-[#0b0b12]/80" />
                             <div className="absolute -inset-6 bg-white/0 blur-2xl transition-all duration-500 group-hover:bg-white/12" />
-
                             <FaGithub className="relative z-10 text-[30px] text-white transition-all duration-500 group-hover:scale-110 group-hover:text-white" />
                         </a>
 
-                        {/* YouTube */}
+                        {/* Discord */}
                         <a
-                            href="https://www.youtube.com/@WebKaizenDev"
+                            href="https://discord.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="YouTube"
+                            aria-label="Discord"
                             className="group relative grid h-14 w-14 place-items-center overflow-hidden rounded-[20px]
         border border-white/10 bg-white/[0.05] backdrop-blur-2xl
         shadow-[0_10px_30px_rgba(0,0,0,0.28)]
         transition-all duration-500 ease-out
-        hover:-translate-y-1.5 hover:scale-105 hover:border-red-400/50"
+        hover:-translate-y-1.5 hover:scale-105 hover:border-indigo-400/50"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-br from-red-500/18 via-rose-500/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/18 via-blue-500/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                             <div className="absolute inset-[1px] rounded-[19px] bg-[#0b0b12]/80" />
-                            <div className="absolute -inset-6 bg-red-500/0 blur-2xl transition-all duration-500 group-hover:bg-red-500/20" />
-
-                            <FaYoutube className="relative z-10 text-[30px] text-white transition-all duration-500 group-hover:scale-110 group-hover:text-red-400" />
+                            <div className="absolute -inset-6 bg-indigo-500/0 blur-2xl transition-all duration-500 group-hover:bg-indigo-500/20" />
+                            <FaDiscord className="relative z-10 text-[30px] text-white transition-all duration-500 group-hover:scale-110 group-hover:text-indigo-400" />
                         </a>
 
-                        {/* Telegram */}
+                        {/* TikTok */}
                         <a
-                            href="https://t.me/web_kaizen_official"
+                            href="https://www.tiktok.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Telegram"
+                            aria-label="TikTok"
                             className="group relative grid h-14 w-14 place-items-center overflow-hidden rounded-[20px]
         border border-white/10 bg-white/[0.05] backdrop-blur-2xl
         shadow-[0_10px_30px_rgba(0,0,0,0.28)]
         transition-all duration-500 ease-out
-        hover:-translate-y-1.5 hover:scale-105 hover:border-sky-400/50"
+        hover:-translate-y-1.5 hover:scale-105 hover:border-pink-400/50"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-br from-sky-500/18 via-cyan-400/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/18 via-pink-500/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                             <div className="absolute inset-[1px] rounded-[19px] bg-[#0b0b12]/80" />
-                            <div className="absolute -inset-6 bg-sky-500/0 blur-2xl transition-all duration-500 group-hover:bg-sky-500/20" />
-
-                            <FaTelegram className="relative z-10 text-[30px] text-white transition-all duration-500 group-hover:scale-110 group-hover:text-sky-400" />
+                            <div className="absolute -inset-6 bg-pink-500/0 blur-2xl transition-all duration-500 group-hover:bg-pink-500/20" />
+                            <FaTiktok className="relative z-10 text-[30px] text-white transition-all duration-500 group-hover:scale-110 group-hover:text-pink-400" />
                         </a>
                     </div>
 
@@ -627,7 +617,7 @@ export default function ContactSection() {
   Copyright © {new Date().getFullYear()} All Rights Reserved | Created by{" "}
   
   <span className="relative inline-block text-white/70">
-    prince
+    Arfa Danial
     <span className="absolute left-1/2 -translate-x-1/2 -bottom-2">
       <div className="h-px w-24 bg-gradient-to-r from-transparent via-white/25 to-transparent" />
     </span>

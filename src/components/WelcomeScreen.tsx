@@ -143,7 +143,7 @@ export default function WelcomeScreen() {
           }}
           className="text-sm text-white/60 tracking-wide"
         >
-          Creating Websites That Feel Alive.
+          Pull Yourself Together.
         </motion.p>
 
         {/* Website Badge */}
@@ -166,7 +166,7 @@ export default function WelcomeScreen() {
             }}
             className="inline-block overflow-hidden whitespace-nowrap"
           >
-            www.webkaizen.in
+            github.com/nyzxis
           </motion.span>
 
           <motion.span

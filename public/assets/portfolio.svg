@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="pBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="50%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="pCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <radialGradient id="pRadialAccent" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#pBgGrad)"/>
+  <circle cx="680" cy="100" r="280" fill="url(#pRadialAccent)"/>
+
+  <!-- Grid -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Card -->
+  <rect x="70" y="55" width="660" height="340" rx="24" fill="url(#pCardGrad)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+  <!-- Badge -->
+  <g transform="translate(110, 100)">
+    <rect width="170" height="32" rx="16" fill="rgba(56,189,248,0.12)" stroke="rgba(56,189,248,0.4)" stroke-width="1"/>
+    <circle cx="18" cy="16" r="4" fill="#38bdf8"/>
+    <text x="32" y="21" fill="#bae6fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">PORTFOLIO V1</text>
+  </g>
+
+  <!-- Title -->
+  <text x="110" y="195" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.5">Arfa Danial Portfolio</text>
+
+  <!-- Subtitle -->
+  <text x="110" y="240" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="400">
+    Interactive 3D portfolio featuring physics cards, smooth animations &amp; tech showcase.
+  </text>
+
+  <!-- Tech tags -->
+  <g transform="translate(110, 290)">
+    <rect x="0" y="0" width="85" height="34" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="16" y="22" fill="#e2e8f0" font-family="monospace" font-size="12" font-weight="500">React 19</text>
+
+    <rect x="95" y="0" width="110" height="34" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="111" y="22" fill="#e2e8f0" font-family="monospace" font-size="12" font-weight="500">Three.js / 3D</text>
+
+    <rect x="215" y="0" width="115" height="34" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="231" y="22" fill="#e2e8f0" font-family="monospace" font-size="12" font-weight="500">Tailwind CSS</text>
+
+    <rect x="340" y="0" width="105" height="34" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="356" y="22" fill="#e2e8f0" font-family="monospace" font-size="12" font-weight="500">TypeScript</text>
+  </g>
+</svg>

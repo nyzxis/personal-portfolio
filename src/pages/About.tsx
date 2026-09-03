@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Download } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import html2pdf from "html2pdf.js";
 
 export default function About() {
   const navigate = useNavigate();
@@ -60,7 +59,7 @@ export default function About() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince Singh Resume</title>
+    <title>Arfa Danial Resume</title>
     <style>
         * {
             margin: 0;
@@ -454,26 +453,25 @@ export default function About() {
         <div class="resume-wrapper">
             <!-- Header -->
             <div class="header">
-                <img src="https://raw.githubusercontent.com/princekumar-dev74/web-images-link/31f4e55d34521861579bab4ab322372fe7d8cec4/Name%20%3D%20Prince%20Singh.png" alt="Prince Kumar" class="profile-photo">
                 <div class="header-content">
-                    <h1>Prince Kumar</h1>
-                    <p class="title">Frontend Developer | Cybersecurity & AI Enthusiast</p>
+                    <h1>Arfa Danial</h1>
+                    <p class="title">Student &amp; Frontend Developer</p>
                     <div class="contact-info">
                         <div class="contact-item">
                             <span class="contact-icon">🏠︎</span>
-                            <span>Gaya, Bihar, India</span>
+                            <span>Selangor, Malaysia</span>
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">✉︎</span>
-                            <a href="mailto:sprince05873@gmail.com">sprince05873@gmail.com</a>
+                            <a href="mailto:itznbdyz@gmail.com">itznbdyz@gmail.com</a>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">🆆</span>
-                            <a href="https://prince-singh-rouge.vercel.app/" target="_blank">Portfolio Website</a>
+                            <span class="contact-icon">📱</span>
+                            <span>+60173326452</span>
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">⛆</span>
-                            <a href="https://github.com/princekumar-dev74" target="_blank">princekumar-dev74</a>
+                            <a href="https://github.com/nyzxis" target="_blank">github.com/nyzxis</a>
                         </div>
                     </div>
                 </div>
@@ -485,7 +483,7 @@ export default function About() {
                 <section class="section">
                     <h2 class="section-title">Professional Summary</h2>
                     <div class="summary-text">
-                        Passionate and self-driven Class 12 student with a strong interest in frontend development, cybersecurity, and modern web technologies. Skilled in building responsive and interactive web applications using modern frameworks and tools. Enthusiastic about learning new technologies, improving problem-solving skills, and creating innovative digital experiences.
+                        Passionate student and frontend developer based in Selangor, Malaysia. Skilled in crafting responsive, interactive web applications with modern frameworks, clean code structure, and engaging user experiences. Philosophy: "Pull Yourself Together."
                     </div>
                 </section>
 
@@ -506,13 +504,13 @@ export default function About() {
                             </div>
                         </div>
                         <div class="skill-category">
-                            <h3>Tools & Platforms</h3>
+                            <h3>Tools &amp; Languages</h3>
                             <div class="skill-tags">
-                                <span class="skill-tag">Git & GitHub</span>
-                                <span class="skill-tag">Firebase</span>
+                                <span class="skill-tag">Git &amp; GitHub</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Python</span>
                                 <span class="skill-tag">Vercel</span>
                                 <span class="skill-tag">Netlify</span>
-                                <span class="skill-tag">Windows Terminal</span>
                             </div>
                         </div>
                     </div>
@@ -523,16 +521,16 @@ export default function About() {
                     <h2 class="section-title">Projects</h2>
                     <div class="section-content">
                         <div class="project">
-                            <h3>Personal Portfolio Website</h3>
-                            <p>• Developed a modern responsive portfolio website</p>
-                            <p>• Created smooth animations and interactive UI components</p>
-                            <p>• Optimized the website for performance and mobile responsiveness</p>
+                            <h3>StudyIt — Learning Port Study Hub</h3>
+                            <p>• Built a calm, focused study dock with curated notes, self-tests, and Pomodoro timer</p>
+                            <p>• Created clean, responsive UI with smooth interactions using HTML, CSS, and JavaScript</p>
+                            <p>• Deployed on Vercel at studyitpi.vercel.app</p>
                         </div>
                         <div class="project">
-                            <h3>Frontend Showcase Projects</h3>
-                            <p>• Built multiple frontend UI projects using React and Tailwind CSS</p>
-                            <p>• Developed responsive layouts and reusable components</p>
-                            <p>• Focused on modern design, clean code structure, and user experience</p>
+                            <h3>Personal Portfolio Website</h3>
+                            <p>• Developed an interactive 3D portfolio using React 19, Three.js, and Tailwind CSS</p>
+                            <p>• Implemented interactive physics cards and animations</p>
+                            <p>• Optimized for fast performance and mobile responsiveness</p>
                         </div>
                     </div>
                 </section>
@@ -614,7 +612,7 @@ export default function About() {
 
         const a = document.createElement("a");
         a.href = url;
-        a.download = "Prince_Kumar_Resume.html";
+        a.download = "Arfa_Danial_Resume.html";
 
         document.body.appendChild(a);
         a.click();
@@ -806,51 +804,23 @@ export default function About() {
               "
             >
               <p>
-                I'm currently a Class 12 student with PCMB, but honestly,
-                my main interest is not in Biology anymore. Before 9th class,
-                I used to think that I would go into the medical field in the
-                future, but as time passed, I started getting more interested
-                in computers and technology.
+                Hey there, I'm Arfa Danial — a passionate student and frontend developer based in Selangor, Malaysia.
               </p>
 
               <p>
-                In 11th class, I explored coding more seriously and slowly
-                developed a strong interest in programming, cybersecurity,
-                and AI.
+                My philosophy is straightforward: <em>"Pull Yourself Together."</em> Whatever challenges arise, I believe in staying focused, learning continuously, and putting in the work to build meaningful projects.
               </p>
 
               <p>
-                Now, coding is something I genuinely enjoy. I like learning
-                new programming languages, building things, and understanding
-                how technology works behind the scenes.
+                I enjoy turning ideas into responsive, interactive digital experiences. My current tech stack revolves around JavaScript, TypeScript, Tailwind CSS, Next.js, Node.js, Python, and modern web standards.
               </p>
 
               <p>
-                Out of everything in tech, ethical hacking and cybersecurity
-                interest me the most because I find it exciting to learn about
-                system security, vulnerabilities, and how hackers think.
+                One of my featured projects is <strong>StudyIt</strong> (Learning Port Study Hub) — a focused study dock designed to help students learn, test themselves, and stay productive with built-in tools like notes and a Pomodoro timer.
               </p>
 
               <p>
-                At the same time, I also enjoy using AI tools and understanding
-                how AI can make work smarter and easier.
-              </p>
-
-              <p>
-                After completing Class 12, I want to move completely into the
-                coding and tech field. My goal is to build a future in
-                cybersecurity, ethical hacking, and AI.
-              </p>
-
-              <p>
-                I know there's still a lot to learn, but I enjoy the process
-                and always try to improve my skills step by step.
-              </p>
-
-              <p>
-                For me, technology is not just a career option anymore —
-                it's something I truly connect with and see myself doing
-                in the future.
+                I'm constantly sharpening my skills, exploring new frameworks, and preparing to build high-quality software that makes a real impact.
               </p>
             </div>
           </div>
