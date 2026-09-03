@@ -1,6 +1,7 @@
 import { ArrowUpRight, Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
+import Lenis from "lenis";
 import favicon from "/favicon.ico";
 
 import heroEye from "@/assets/hero-eye.png";
@@ -24,11 +25,54 @@ export default function App() {
   const [displayed, setDisplayed] = useState("");
   const [colorMode, setColorMode] = useState(0);
 
+  const lenisRef = useRef<Lenis | null>(null);
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   const colors = [
     "bg-gradient-to-b from-white via-gray-200 via-gray-500 to-black text-transparent bg-clip-text",
     "text-white",
     "bg-gradient-to-b from-black via-gray-500 via-gray-200 to-white text-transparent bg-clip-text",
   ];
+
+  // Initialize Lenis Smooth Scroll
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      touchMultiplier: 1.5,
+    });
+    lenisRef.current = lenis;
+
+    let rafId: number;
+    function raf(time: number) {
+      lenis.raf(time);
+      rafId = requestAnimationFrame(raf);
+    }
+    rafId = requestAnimationFrame(raf);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      lenis.destroy();
+      lenisRef.current = null;
+    };
+  }, []);
+
+  const scrollTo = (id: string) => {
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(id, { offset: 0, duration: 1.2 });
+    } else {
+      document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => setShowWelcome(false), 5000);
@@ -38,12 +82,15 @@ export default function App() {
   useEffect(() => {
     if (showWelcome || mobileMenu) {
       document.body.style.overflow = "hidden";
+      lenisRef.current?.stop();
     } else {
       document.body.style.overflow = "auto";
+      lenisRef.current?.start();
     }
 
     return () => {
       document.body.style.overflow = "auto";
+      lenisRef.current?.start();
     };
   }, [showWelcome, mobileMenu]);
 
@@ -78,6 +125,12 @@ export default function App() {
     <Routes>
       <Route path="/" element={
         <div className="min-h-screen bg-black text-white overflow-x-hidden">
+          {/* Top Ambient Scroll Progress Indicator */}
+          <motion.div
+            style={{ scaleX }}
+            className="fixed top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-sky-400 via-indigo-300 to-white origin-left z-[100] pointer-events-none shadow-[0_0_12px_rgba(56,189,248,0.8)]"
+          />
+
           <AnimatePresence>{showWelcome && <WelcomeScreen />}</AnimatePresence>
 
           <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 backdrop-blur-xl bg-black/20 border-b border-white/10">
@@ -94,44 +147,28 @@ export default function App() {
             </div>
             <ul className="hidden md:flex items-center gap-10 text-xs tracking-widest text-white/70 uppercase">
               <li
-                onClick={() =>
-                  document.getElementById("Home")?.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
+                onClick={() => scrollTo("#Home")}
                 className="relative hover:text-white transition-colors cursor-pointer after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
               >
                 Home
               </li>
 
               <li
-                onClick={() =>
-                  document.getElementById("about")?.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
+                onClick={() => scrollTo("#about")}
                 className="relative hover:text-white transition-colors cursor-pointer after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
               >
                 About
               </li>
 
               <li
-                onClick={() =>
-                  document.getElementById("showcase")?.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
+                onClick={() => scrollTo("#showcase")}
                 className="relative hover:text-white transition-colors cursor-pointer after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
               >
                 Showcase
               </li>
 
               <li
-                onClick={() =>
-                  document.getElementById("contact")?.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
+                onClick={() => scrollTo("#contact")}
                 className="relative hover:text-white transition-colors cursor-pointer after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
               >
                 Contact
@@ -166,9 +203,7 @@ export default function App() {
 
               <button
                 onClick={() => {
-                  document.getElementById("Home")?.scrollIntoView({
-                    behavior: "smooth",
-                  });
+                  scrollTo("#Home");
                   setMobileMenu(false);
                 }}
                 className="relative after:absolute after:left-0 after:-bottom-2 after:h-[1px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
@@ -178,9 +213,7 @@ export default function App() {
 
               <button
                 onClick={() => {
-                  document.getElementById("about")?.scrollIntoView({
-                    behavior: "smooth",
-                  });
+                  scrollTo("#about");
                   setMobileMenu(false);
                 }}
                 className="relative after:absolute after:left-0 after:-bottom-2 after:h-[1px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
@@ -190,9 +223,7 @@ export default function App() {
 
               <button
                 onClick={() => {
-                  document.getElementById("showcase")?.scrollIntoView({
-                    behavior: "smooth",
-                  });
+                  scrollTo("#showcase");
                   setMobileMenu(false);
                 }}
                 className="relative after:absolute after:left-0 after:-bottom-2 after:h-[1px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
@@ -202,9 +233,7 @@ export default function App() {
 
               <button
                 onClick={() => {
-                  document.getElementById("contact")?.scrollIntoView({
-                    behavior: "smooth",
-                  });
+                  scrollTo("#contact");
                   setMobileMenu(false);
                 }}
                 className="relative after:absolute after:left-0 after:-bottom-2 after:h-[1px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
