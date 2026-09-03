@@ -8,7 +8,7 @@ export default function FrontendDeveloperSection() {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { amount: 0.4 });
 
-  const [showCard, setShowCard] = useState(false);
+  const [showCard, setShowCard] = useState(true);
   const [mounted, setMounted] = useState(false);
   const [goAbout, setGoAbout] = useState(false);
 
