@@ -20,6 +20,13 @@ const techStack = [
 
 const projects = [
   {
+    title: "Phishing Detection AI",
+    tech: "Python + Scikit-learn + Flask + React + PostgreSQL",
+    thumbnail: "/assets/phishguard.svg",
+    github: "https://github.com/nyzxis/phishing-detector",
+    live: "https://github.com/nyzxis/phishing-detector",
+  },
+  {
     title: "StudyIt",
     tech: "HTML + CSS + JavaScript",
     thumbnail: "/assets/studyit.svg",

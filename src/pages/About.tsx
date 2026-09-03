@@ -816,7 +816,7 @@ export default function About() {
               </p>
 
               <p>
-                One of my featured projects is <strong>StudyIt</strong> (Learning Port Study Hub) — a focused study dock designed to help students learn, test themselves, and stay productive with built-in tools like notes and a Pomodoro timer.
+                My featured projects include <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React) and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
               </p>
 
               <p>
