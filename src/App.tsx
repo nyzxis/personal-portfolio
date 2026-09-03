@@ -218,11 +218,11 @@ export default function App() {
             id="Home"
             className="relative w-full h-screen min-h-[640px] overflow-hidden bg-black"
           >
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <img
                 src={heroEye}
                 alt="Hero"
-                className="h-[90%] w-[90%] object-contain object-center"
+                className="h-[90%] w-[90%] object-contain object-center [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_90%)]"
               />
             </div>
 
