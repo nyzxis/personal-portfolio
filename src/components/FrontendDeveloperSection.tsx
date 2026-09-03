@@ -126,7 +126,7 @@ export default function FrontendDeveloperSection() {
     animate-[shine_4s_linear_infinite]"
         >
           Student & Frontend Developer based in Selangor, Malaysia.
-          Crafting responsive and elegant web interfaces. Pull Yourself Together.
+          Crafting responsive and elegant web interfaces. Pixels, code, and a little bit of chaos.
         </motion.p>
 
         <motion.div

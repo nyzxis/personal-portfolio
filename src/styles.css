@@ -200,3 +200,11 @@ html.lenis, html.lenis body {
   overflow: hidden;
 }
 
+/* Custom Cursor Hide Native on Desktop */
+@media (pointer: fine) {
+  body, a, button, [role="button"], input, textarea, select {
+    cursor: none;
+  }
+}
+
+

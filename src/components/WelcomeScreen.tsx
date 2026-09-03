@@ -143,7 +143,7 @@ export default function WelcomeScreen() {
           }}
           className="text-sm text-white/60 tracking-wide"
         >
-          Pull Yourself Together.
+          Pixels, code, and a little bit of chaos
         </motion.p>
 
         {/* Website Badge */}

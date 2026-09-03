@@ -483,7 +483,7 @@ export default function About() {
                 <section class="section">
                     <h2 class="section-title">Professional Summary</h2>
                     <div class="summary-text">
-                        Passionate student and frontend developer based in Selangor, Malaysia. Skilled in crafting responsive, interactive web applications with modern frameworks, clean code structure, and engaging user experiences. Philosophy: "Pull Yourself Together."
+                        Passionate student and frontend developer based in Selangor, Malaysia. Skilled in crafting responsive, interactive web applications with modern frameworks, clean code structure, and engaging user experiences. Philosophy: "Pixels, code, and a little bit of chaos."
                     </div>
                 </section>
 
@@ -808,7 +808,7 @@ export default function About() {
               </p>
 
               <p>
-                My philosophy is straightforward: <em>"Pull Yourself Together."</em> Whatever challenges arise, I believe in staying focused, learning continuously, and putting in the work to build meaningful projects.
+                My philosophy is straightforward: <em>"Pixels, code, and a little bit of chaos."</em> Whatever challenges arise, I believe in staying focused, learning continuously, and putting in the work to build meaningful projects.
               </p>
 
               <p>

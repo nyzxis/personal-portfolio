@@ -11,6 +11,7 @@ import FrontendDeveloperSection from "@/components/FrontendDeveloperSection";
 import Showcase from "./components/Showcase";
 import ContactSection from "@/components/ContactSection";
 import KineticGrid from "@/components/ui/kinetic-grid";
+import CustomCursor from "@/components/CustomCursor";
 import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 
@@ -126,6 +127,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={
         <KineticGrid globalColor="default" className="min-h-screen overflow-x-hidden">
+          <CustomCursor />
           {/* Top Ambient Scroll Progress Indicator */}
           <motion.div
             style={{ scaleX }}
@@ -277,11 +279,11 @@ bg-[length:200%_auto]
 bg-gradient-to-r
 from-white via-white/60 to-white
 animate-[shine_4s_linear_infinite]">
-                Pull
+                Pixels, code,
                 <br />
-                Yourself
+                and a little bit
                 <br />
-                Together.
+                of chaos.
               </p>
 
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mt-auto">
