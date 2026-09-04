@@ -26,7 +26,7 @@ export default function CustomCursor() {
 
     const onMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
-      if (!isVisible) setIsVisible(true);
+      setIsVisible(true);
     };
 
     const onMouseDown = () => setIsClicked(true);
@@ -65,7 +65,7 @@ export default function CustomCursor() {
       document.removeEventListener("mouseenter", onMouseEnter);
       window.removeEventListener("mouseover", onMouseOver);
     };
-  }, [isVisible]);
+  }, []);
 
   if (isTouchDevice || !isVisible) return null;
 

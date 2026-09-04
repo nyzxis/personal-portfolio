@@ -38,7 +38,7 @@ extend({
 
 const GLTF_PATH = "/assets/cards.glb";
 const TEXTURE_PATH = "/assets/new.jpeg";
-const CARD_TEXTURE_PATH = "/assets/card-texture.png";
+const CARD_TEXTURE_PATH = "/assets/card-texture.webp";
 
 useGLTF.preload(GLTF_PATH);
 useTexture.preload(TEXTURE_PATH);

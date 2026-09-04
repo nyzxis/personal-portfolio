@@ -501,16 +501,19 @@ export default function About() {
                                 <span class="skill-tag">React.js</span>
                                 <span class="skill-tag">Next.js</span>
                                 <span class="skill-tag">Tailwind CSS</span>
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">Scikit-learn</span>
                             </div>
                         </div>
                         <div class="skill-category">
                             <h3>Tools &amp; Languages</h3>
                             <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Pandas</span>
                                 <span class="skill-tag">Git &amp; GitHub</span>
                                 <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">PostgreSQL</span>
                                 <span class="skill-tag">Vercel</span>
-                                <span class="skill-tag">Netlify</span>
                             </div>
                         </div>
                     </div>
@@ -520,6 +523,12 @@ export default function About() {
                 <section class="section">
                     <h2 class="section-title">Projects</h2>
                     <div class="section-content">
+                        <div class="project">
+                            <h3>MalGuard — AI Malware Detection &amp; Static Analysis Engine</h3>
+                            <p>• Engineered automated static binary dissector analyzing PE headers, section entropy, and dangerous Win32 APIs</p>
+                            <p>• Built Random Forest ML model with Explainable AI (XAI) feature attribution and zero-execution sandbox</p>
+                            <p>• Built with FastAPI, Scikit-learn, React 19, and dual Cyber/Minimalist themes at malguard.vercel.app</p>
+                        </div>
                         <div class="project">
                             <h3>VulnShield — Automated Web Vulnerability Scanner</h3>
                             <p>• Engineered an offensive web security auditor analyzing OWASP Top 10 injection vectors</p>
@@ -531,6 +540,12 @@ export default function About() {
                             <p>• Engineered a zero-knowledge password security auditor with real-time Shannon entropy modeling</p>
                             <p>• Integrated Troy Hunt's k-Anonymity breach detection via HaveIBeenPwned API and cryptographic generator</p>
                             <p>• Built with React 19, TypeScript, FastAPI, and dual Cyber/Minimalist themes at pwsec-nyz.vercel.app</p>
+                        </div>
+                        <div class="project">
+                            <h3>PhishGuard — AI-Powered Phishing Detection System</h3>
+                            <p>• Developed dual-model URL and email body threat analyzer utilizing NLP TF-IDF and Random Forest classification</p>
+                            <p>• Implemented heuristic scoring, domain age verification, and homoglyph spoof detection</p>
+                            <p>• Built with Flask, Scikit-learn, React, and PostgreSQL at phishingdetector-nyzxis.vercel.app</p>
                         </div>
                         <div class="project">
                             <h3>StudyIt — Learning Port Study Hub</h3>
@@ -694,8 +709,8 @@ export default function About() {
           className="flex flex-col items-center"
         >
           <img
-            src="/assets/prince.png"
-            alt="Prince Kumar"
+            src="/assets/prince.webp"
+            alt="Arfa Danial"
             className="
               w-[200px]
               sm:w-[280px]
@@ -828,7 +843,7 @@ export default function About() {
               </p>
 
               <p>
-                My featured projects include <strong>VulnShield</strong> (an automated web vulnerability scanner &amp; security posture auditor built with FastAPI and React 19), <strong>KeyVault</strong> (a zero-knowledge password security auditor &amp; k-Anonymity breach detection platform), <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React), and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
+                My featured projects include <strong>MalGuard</strong> (an AI-powered static binary forensics &amp; malware classification engine built with Scikit-learn and FastAPI), <strong>VulnShield</strong> (an automated web vulnerability scanner &amp; security posture auditor built with FastAPI and React 19), <strong>KeyVault</strong> (a zero-knowledge password security auditor &amp; k-Anonymity breach detection platform), <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React), and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
               </p>
 
               <p>

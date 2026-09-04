@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import Lenis from "lenis";
 import favicon from "/favicon.ico";
 
-import heroEye from "@/assets/hero-eye.png";
+import heroEye from "@/assets/hero-eye.webp";
 
 import WelcomeScreen from "@/components/WelcomeScreen";
 import FrontendDeveloperSection from "@/components/FrontendDeveloperSection";
@@ -19,7 +19,13 @@ import About from "./pages/About";
 const logos = ["ARFA DANIAL", "STUDENT", "FRONTEND", "DEVELOPER", "SELANGOR"];
 
 export default function App() {
-  const [showWelcome, setShowWelcome] = useState(true);
+  const [showWelcome, setShowWelcome] = useState(() => {
+    try {
+      return !sessionStorage.getItem("nyzxis_welcome_seen");
+    } catch {
+      return true;
+    }
+  });
   const [time, setTime] = useState("");
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -77,9 +83,34 @@ export default function App() {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowWelcome(false), 5000);
-    return () => clearTimeout(timer);
-  }, []);
+    if (!showWelcome) return;
+
+    const dismissWelcome = () => {
+      setShowWelcome(false);
+      try {
+        sessionStorage.setItem("nyzxis_welcome_seen", "true");
+      } catch {}
+    };
+
+    const timer = setTimeout(dismissWelcome, 2200);
+
+    const onUserInteraction = () => {
+      dismissWelcome();
+    };
+
+    window.addEventListener("keydown", onUserInteraction);
+    window.addEventListener("click", onUserInteraction);
+    window.addEventListener("wheel", onUserInteraction, { passive: true });
+    window.addEventListener("touchstart", onUserInteraction, { passive: true });
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("keydown", onUserInteraction);
+      window.removeEventListener("click", onUserInteraction);
+      window.removeEventListener("wheel", onUserInteraction);
+      window.removeEventListener("touchstart", onUserInteraction);
+    };
+  }, [showWelcome]);
 
   useEffect(() => {
     if (showWelcome || mobileMenu) {

@@ -9,12 +9,26 @@ export default function FrontendDeveloperSection() {
   const inView = useInView(ref, { amount: 0.4 });
 
   const [showCard, setShowCard] = useState(true);
-  const [mounted, setMounted] = useState(false);
+  const [hasScrolledNear, setHasScrolledNear] = useState(false);
   const [goAbout, setGoAbout] = useState(false);
 
   const navigate = useNavigate();
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    if (inView) {
+      setHasScrolledNear(true);
+      return;
+    }
+
+    // Pre-warm in background only after initial landing page has settled
+    const timer = setTimeout(() => {
+      if (typeof window !== "undefined" && window.innerWidth >= 768) {
+        setHasScrolledNear(true);
+      }
+    }, 3500);
+
+    return () => clearTimeout(timer);
+  }, [inView]);
 
   // page exit → navigate after animation
   useEffect(() => {
@@ -186,7 +200,7 @@ export default function FrontendDeveloperSection() {
 
       {/* 3D ID CARD */}
       <AnimatePresence>
-        {showCard && mounted && (
+        {showCard && hasScrolledNear && (
           <motion.div
             initial={{ y: "-100%", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

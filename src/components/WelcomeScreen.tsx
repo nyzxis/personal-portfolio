@@ -183,17 +183,22 @@ export default function WelcomeScreen() {
           </motion.span>
         </motion.div>
 
-        {/* Bottom Loading Line */}
-        <div className="mt-10 w-[240px] bg-white/20 h-[2px] overflow-hidden rounded-full">
-          <motion.div
-            initial={{ width: "10%" }}
-            animate={{ width: "100%" }}
-            transition={{
-              duration: 6.5,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-            className="h-full bg-white"
-          />
+        {/* Bottom Loading Line & Skip Hint */}
+        <div className="mt-8 w-[220px] flex flex-col items-center gap-3">
+          <div className="w-full bg-white/20 h-[2px] overflow-hidden rounded-full">
+            <motion.div
+              initial={{ width: "10%" }}
+              animate={{ width: "100%" }}
+              transition={{
+                duration: 2.0,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="h-full bg-white"
+            />
+          </div>
+          <span className="text-[10px] text-white/40 tracking-[0.2em] uppercase font-mono cursor-pointer hover:text-white/80 transition-colors select-none">
+            Click anywhere or press any key to enter ↵
+          </span>
         </div>
       </motion.div>
     </motion.div>
