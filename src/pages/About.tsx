@@ -521,6 +521,12 @@ export default function About() {
                     <h2 class="section-title">Projects</h2>
                     <div class="section-content">
                         <div class="project">
+                            <h3>KeyVault — Password Security Analyzer</h3>
+                            <p>• Engineered a zero-knowledge password security auditor with real-time Shannon entropy modeling</p>
+                            <p>• Integrated Troy Hunt's k-Anonymity breach detection via HaveIBeenPwned API and cryptographic generator</p>
+                            <p>• Built with React 19, TypeScript, FastAPI, and dual Cyber/Minimalist themes at pwsec-nyz.vercel.app</p>
+                        </div>
+                        <div class="project">
                             <h3>StudyIt — Learning Port Study Hub</h3>
                             <p>• Built a calm, focused study dock with curated notes, self-tests, and Pomodoro timer</p>
                             <p>• Created clean, responsive UI with smooth interactions using HTML, CSS, and JavaScript</p>
@@ -816,7 +822,7 @@ export default function About() {
               </p>
 
               <p>
-                My featured projects include <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React) and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
+                My featured projects include <strong>KeyVault</strong> (a zero-knowledge password security auditor &amp; k-Anonymity breach detection platform built with React 19 and FastAPI), <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React), and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
               </p>
 
               <p>

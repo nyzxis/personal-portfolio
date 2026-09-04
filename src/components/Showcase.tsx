@@ -20,6 +20,13 @@ const techStack = [
 
 const projects = [
   {
+    title: "KeyVault // Security Analyzer",
+    tech: "React 19 + TypeScript + FastAPI + HIBP API",
+    thumbnail: "/assets/keyvault.svg",
+    github: "https://github.com/nyzxis/password-security-analyzer",
+    live: "https://pwsec-nyz.vercel.app/",
+  },
+  {
     title: "Phishing Detection AI",
     tech: "Python + Scikit-learn + Flask + React + PostgreSQL",
     thumbnail: "/assets/phishguard.svg",
@@ -38,7 +45,7 @@ const projects = [
     tech: "React + TypeScript + Tailwind",
     thumbnail: "/assets/portfolio.svg",
     github: "https://github.com/nyzxis/personal-portfolio",
-    live: "https://github.com/nyzxis/personal-portfolio",
+    live: "https://nyzxis.vercel.app/",
   },
 ];
 
@@ -97,11 +104,11 @@ function ProjectCard({ item }: { item: typeof projects[0] }) {
           <p className="text-white font-bold text-base leading-snug">{item.title}</p>
         </div>
       </div>
-      <div className="p-5 flex items-center justify-between">
-        <span className="text-[10px] uppercase tracking-[0.25em] text-white/40 font-mono">
+      <div className="p-5 flex items-center justify-between gap-3">
+        <span className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-mono">
           {item.tech}
         </span>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
           {item.live && (
             <a
               href={item.live}
@@ -539,7 +546,7 @@ export default function ShowcaseSection() {
           onTouchEnd={handleTouchEnd}
         >
           {active === "projects" && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-5xl mx-auto">
               {projects.map((item, i) => (
                 <div
                   key={i}
