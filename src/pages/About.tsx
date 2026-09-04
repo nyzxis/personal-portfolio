@@ -521,6 +521,12 @@ export default function About() {
                     <h2 class="section-title">Projects</h2>
                     <div class="section-content">
                         <div class="project">
+                            <h3>VulnShield — Automated Web Vulnerability Scanner</h3>
+                            <p>• Engineered an offensive web security auditor analyzing OWASP Top 10 injection vectors</p>
+                            <p>• Developed benign XSS token verification, multi-RDBMS SQLi heuristics, and security header baselines</p>
+                            <p>• Built with FastAPI, BeautifulSoup4, React 19, and dual Cyber/Minimalist themes with live telemetry</p>
+                        </div>
+                        <div class="project">
                             <h3>KeyVault — Password Security Analyzer</h3>
                             <p>• Engineered a zero-knowledge password security auditor with real-time Shannon entropy modeling</p>
                             <p>• Integrated Troy Hunt's k-Anonymity breach detection via HaveIBeenPwned API and cryptographic generator</p>
@@ -822,7 +828,7 @@ export default function About() {
               </p>
 
               <p>
-                My featured projects include <strong>KeyVault</strong> (a zero-knowledge password security auditor &amp; k-Anonymity breach detection platform built with React 19 and FastAPI), <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React), and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
+                My featured projects include <strong>VulnShield</strong> (an automated web vulnerability scanner &amp; security posture auditor built with FastAPI and React 19), <strong>KeyVault</strong> (a zero-knowledge password security auditor &amp; k-Anonymity breach detection platform), <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React), and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
               </p>
 
               <p>

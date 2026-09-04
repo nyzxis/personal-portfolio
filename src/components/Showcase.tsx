@@ -20,6 +20,13 @@ const techStack = [
 
 const projects = [
   {
+    title: "VulnShield // Vulnerability Scanner",
+    tech: "FastAPI + BeautifulSoup + React 19 + Heuristics",
+    thumbnail: "/assets/vulnshield.svg",
+    github: "https://github.com/nyzxis/vulnshield",
+    live: "https://vulnshield-nyz.vercel.app/",
+  },
+  {
     title: "KeyVault // Security Analyzer",
     tech: "React 19 + TypeScript + FastAPI + HIBP API",
     thumbnail: "/assets/keyvault.svg",
