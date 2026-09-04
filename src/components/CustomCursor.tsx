@@ -11,11 +11,18 @@ export default function CustomCursor() {
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
-    // Detect touch / mobile devices
-    if (window.matchMedia("(pointer: coarse)").matches || "ontouchstart" in window) {
+    // Only suppress on pure touch devices without fine mouse pointer
+    const isPureTouch =
+      typeof window !== "undefined" &&
+      window.matchMedia("(pointer: coarse)").matches &&
+      !window.matchMedia("(pointer: fine)").matches;
+
+    if (isPureTouch) {
       setIsTouchDevice(true);
       return;
     }
+
+    document.documentElement.classList.add("has-custom-cursor");
 
     const onMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
@@ -50,6 +57,7 @@ export default function CustomCursor() {
     window.addEventListener("mouseover", onMouseOver, { passive: true });
 
     return () => {
+      document.documentElement.classList.remove("has-custom-cursor");
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("mousedown", onMouseDown);
       window.removeEventListener("mouseup", onMouseUp);
