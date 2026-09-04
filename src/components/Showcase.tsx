@@ -20,6 +20,13 @@ const techStack = [
 
 const projects = [
   {
+    title: "MalGuard // Malware Classifier",
+    tech: "Scikit-learn + FastAPI + Pandas + React 19 + XAI",
+    thumbnail: "/assets/malguard.svg",
+    github: "https://github.com/nyzxis/malguard",
+    live: "https://malguard.vercel.app/",
+  },
+  {
     title: "VulnShield // Vulnerability Scanner",
     tech: "FastAPI + BeautifulSoup + React 19 + Heuristics",
     thumbnail: "/assets/vulnshield.svg",
