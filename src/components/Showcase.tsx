@@ -24,7 +24,7 @@ const projects = [
     tech: "Python + Scikit-learn + Flask + React + PostgreSQL",
     thumbnail: "/assets/phishguard.svg",
     github: "https://github.com/nyzxis/phishing-detector",
-    live: "https://github.com/nyzxis/phishing-detector",
+    live: "https://phishingdetector-nyzxis.vercel.app/",
   },
   {
     title: "StudyIt",
