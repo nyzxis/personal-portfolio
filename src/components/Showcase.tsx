@@ -24,7 +24,7 @@ const projects = [
     tech: "FastAPI + BeautifulSoup + React 19 + Heuristics",
     thumbnail: "/assets/vulnshield.svg",
     github: "https://github.com/nyzxis/vulnshield",
-    live: "https://vulnshield-nyz.vercel.app/",
+    live: "https://vulnshield.vercel.app/",
   },
   {
     title: "KeyVault // Security Analyzer",

@@ -524,7 +524,7 @@ export default function About() {
                             <h3>VulnShield — Automated Web Vulnerability Scanner</h3>
                             <p>• Engineered an offensive web security auditor analyzing OWASP Top 10 injection vectors</p>
                             <p>• Developed benign XSS token verification, multi-RDBMS SQLi heuristics, and security header baselines</p>
-                            <p>• Built with FastAPI, BeautifulSoup4, React 19, and dual Cyber/Minimalist themes with live telemetry</p>
+                            <p>• Built with FastAPI, BeautifulSoup4, React 19, and dual Cyber/Minimalist themes at vulnshield.vercel.app</p>
                         </div>
                         <div class="project">
                             <h3>KeyVault — Password Security Analyzer</h3>
