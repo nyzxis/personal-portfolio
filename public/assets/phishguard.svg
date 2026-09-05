@@ -41,9 +41,9 @@
 
   <!-- Badge -->
   <g transform="translate(110, 100)">
-    <rect width="180" height="32" rx="16" fill="rgba(6, 182, 212, 0.15)" stroke="rgba(6, 182, 212, 0.45)" stroke-width="1"/>
+    <rect width="210" height="32" rx="16" fill="rgba(6, 182, 212, 0.15)" stroke="rgba(6, 182, 212, 0.45)" stroke-width="1"/>
     <circle cx="18" cy="16" r="4" fill="#06b6d4"/>
-    <text x="32" y="21" fill="#67e8f9" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">AI CYBER DEFENSE</text>
+    <text x="32" y="20.5" fill="#67e8f9" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.8">AI CYBER DEFENSE</text>
   </g>
 
   <!-- Title -->

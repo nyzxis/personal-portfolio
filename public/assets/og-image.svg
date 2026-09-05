@@ -37,9 +37,9 @@
 
   <!-- Badge Island -->
   <g transform="translate(110, 105)">
-    <rect width="320" height="38" rx="19" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(6, 182, 212, 0.45)" stroke-width="1.2"/>
+    <rect width="330" height="38" rx="19" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(6, 182, 212, 0.45)" stroke-width="1.2"/>
     <circle cx="22" cy="19" r="5" fill="#06b6d4"/>
-    <text x="38" y="24" fill="#38bdf8" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">✦ ARFA DANIAL (@NYZXIS) ✦</text>
+    <text x="38" y="23.5" fill="#38bdf8" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="0.8">✦ ARFA DANIAL (@NYZXIS) ✦</text>
   </g>
 
   <!-- Title -->
