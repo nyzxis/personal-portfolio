@@ -527,7 +527,7 @@ export default function About() {
                             <h3>APIShield — OWASP API Security Top 10 Automated Pentesting Suite</h3>
                             <p>• Engineered automated REST API security scanner targeting OWASP API Security Top 10 (2023)</p>
                             <p>• Implemented probes for BOLA/IDOR, broken authentication, JWT alg=none bypasses, and mass assignment</p>
-                            <p>• Built with FastAPI, Requests, PostgreSQL/SQLite fallback, React 19, and dual Cyber/Minimalist themes at apishield.vercel.app</p>
+                            <p>• Built with FastAPI, Requests, PostgreSQL/SQLite fallback, React 19, and dual Cyber/Minimalist themes at apishield-pi.vercel.app</p>
                         </div>
                         <div class="project">
                             <h3>MalGuard — AI Malware Detection &amp; Static Analysis Engine</h3>

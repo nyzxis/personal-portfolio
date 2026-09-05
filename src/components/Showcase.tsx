@@ -24,7 +24,7 @@ const projects = [
     tech: "FastAPI + Requests + PostgreSQL + React 19 + OWASP Top 10",
     thumbnail: "/assets/apishield.svg",
     github: "https://github.com/nyzxis/apishield",
-    live: "https://apishield.vercel.app/",
+    live: "https://apishield-pi.vercel.app/",
   },
   {
     title: "MalGuard // Malware Classifier",
