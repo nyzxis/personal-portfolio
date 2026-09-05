@@ -1,0 +1,55 @@
+# Arfa Danial (@nyzxis) — Full-Stack Developer & Cybersecurity Systems Engineer
+
+> Official AI & LLM Context Manifest for https://nyzxis.vercel.app/
+
+## Identity & Profile
+- **Name**: Arfa Danial
+- **Handle**: @nyzxis
+- **Role**: Full-Stack Web Developer & Cybersecurity / AI Systems Engineer
+- **Location**: Selangor, Malaysia
+- **Portfolio**: https://nyzxis.vercel.app/
+- **GitHub**: https://github.com/nyzxis
+
+## Core Competencies
+- **Languages**: TypeScript, JavaScript, Python, HTML5, CSS3, SQL
+- **Frontend & 3D**: React 19, Three.js, React Three Fiber, Rapier Physics, Tailwind CSS v4, Framer Motion, Lenis
+- **Backend & APIs**: FastAPI, Flask, Node.js, Uvicorn, REST, WebSockets, PostgreSQL, SQLite
+- **Security & ML**: OWASP Top 10, OWASP API Top 10 (2023), Scikit-learn, Random Forest, PE Binary Analysis, Shannon Entropy, k-Anonymity, Explainable AI (XAI)
+
+## Featured Production Projects
+
+### 1. APIShield (OWASP API Top 10 Automated Pentester)
+- **Live**: https://apishield-pi.vercel.app/
+- **Repo**: https://github.com/nyzxis/apishield
+- **Stack**: FastAPI, Requests, PostgreSQL/SQLite, React 19, Tailwind v4
+- **Overview**: Automated REST pentesting suite auditing BOLA/IDOR, broken authentication, JWT alg=none bypasses, and mass assignment with reproducible cURL commands and executive dossiers.
+
+### 2. MalGuard (AI Malware Detection & PE Forensics)
+- **Live**: https://malguard.vercel.app/
+- **Repo**: https://github.com/nyzxis/malguard
+- **Stack**: Scikit-learn, FastAPI, Pandas, React 19, XAI
+- **Overview**: Automated static binary dissector inspecting Windows PE headers, Shannon entropy heatmaps, Win32 API imports, and Random Forest classification without executing untrusted code.
+
+### 3. VulnShield (Automated Web Vulnerability Scanner)
+- **Live**: https://vulnshield.vercel.app/
+- **Repo**: https://github.com/nyzxis/vulnshield
+- **Stack**: FastAPI, BeautifulSoup4, Requests, React 19
+- **Overview**: Automated web vulnerability auditor detecting Reflected XSS canary tokens, SQL injection heuristics, security headers (HSTS, CSP), and cookie misconfigurations.
+
+### 4. KeyVault (Zero-Knowledge Password Security Analyzer)
+- **Live**: https://pwsec-nyz.vercel.app/
+- **Repo**: https://github.com/nyzxis/password-security-analyzer
+- **Stack**: React 19, TypeScript, FastAPI, HIBP k-Anonymity API
+- **Overview**: Zero-knowledge password entropy calculator and HaveIBeenPwned breach detection using SHA-1 prefix k-Anonymity where no raw passwords ever leave the browser.
+
+### 5. PhishGuard (AI Phishing Detection System)
+- **Live**: https://phishingdetector-nyzxis.vercel.app/
+- **Repo**: https://github.com/nyzxis/phishing-detector
+- **Stack**: Scikit-learn, Flask, React, PostgreSQL
+- **Overview**: Dual-vector machine learning threat classifier analyzing malicious URLs and phishing emails using NLP lexical extraction and structural heuristics.
+
+### 6. StudyIt (Productivity & Study Workspace)
+- **Live**: https://studyitpi.vercel.app/
+- **Repo**: https://github.com/nyzxis/studyit
+- **Stack**: Vanilla JavaScript, HTML5, CSS3
+- **Overview**: Clean, distraction-free study desk with Pomodoro timer, ambient soundscapes, scratchpad notes, and subject progress tracking.
