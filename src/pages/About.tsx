@@ -524,6 +524,12 @@ export default function About() {
                     <h2 class="section-title">Projects</h2>
                     <div class="section-content">
                         <div class="project">
+                            <h3>APIShield — OWASP API Security Top 10 Automated Pentesting Suite</h3>
+                            <p>• Engineered automated REST API security scanner targeting OWASP API Security Top 10 (2023)</p>
+                            <p>• Implemented probes for BOLA/IDOR, broken authentication, JWT alg=none bypasses, and mass assignment</p>
+                            <p>• Built with FastAPI, Requests, PostgreSQL/SQLite fallback, React 19, and dual Cyber/Minimalist themes at apishield.vercel.app</p>
+                        </div>
+                        <div class="project">
                             <h3>MalGuard — AI Malware Detection &amp; Static Analysis Engine</h3>
                             <p>• Engineered automated static binary dissector analyzing PE headers, section entropy, and dangerous Win32 APIs</p>
                             <p>• Built Random Forest ML model with Explainable AI (XAI) feature attribution and zero-execution sandbox</p>
@@ -843,7 +849,7 @@ export default function About() {
               </p>
 
               <p>
-                My featured projects include <strong>MalGuard</strong> (an AI-powered static binary forensics &amp; malware classification engine built with Scikit-learn and FastAPI), <strong>VulnShield</strong> (an automated web vulnerability scanner &amp; security posture auditor built with FastAPI and React 19), <strong>KeyVault</strong> (a zero-knowledge password security auditor &amp; k-Anonymity breach detection platform), <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React), and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
+                My featured projects include <strong>APIShield</strong> (an automated REST API pentesting suite &amp; OWASP Top 10 security scanner built with FastAPI, PostgreSQL, and React 19), <strong>MalGuard</strong> (an AI-powered static binary forensics &amp; malware classification engine built with Scikit-learn and FastAPI), <strong>VulnShield</strong> (an automated web vulnerability scanner &amp; security posture auditor built with FastAPI and React 19), <strong>KeyVault</strong> (a zero-knowledge password security auditor &amp; k-Anonymity breach detection platform), <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React), and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
               </p>
 
               <p>

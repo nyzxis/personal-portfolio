@@ -20,6 +20,13 @@ const techStack = [
 
 const projects = [
   {
+    title: "APIShield // OWASP API Pentester",
+    tech: "FastAPI + Requests + PostgreSQL + React 19 + OWASP Top 10",
+    thumbnail: "/assets/apishield.svg",
+    github: "https://github.com/nyzxis/apishield",
+    live: "https://apishield.vercel.app/",
+  },
+  {
     title: "MalGuard // Malware Classifier",
     tech: "Scikit-learn + FastAPI + Pandas + React 19 + XAI",
     thumbnail: "/assets/malguard.svg",
