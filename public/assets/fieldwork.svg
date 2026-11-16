@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="fwBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050914"/>
+      <stop offset="50%" stop-color="#0c152e"/>
+      <stop offset="100%" stop-color="#040710"/>
+    </linearGradient>
+    <linearGradient id="fwCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(6, 182, 212, 0.14)"/>
+      <stop offset="50%" stop-color="rgba(129, 140, 248, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(10, 14, 28, 0.90)"/>
+    </linearGradient>
+    <radialGradient id="fwCyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fwIndigoGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#fwBgGrad)"/>
+  <circle cx="680" cy="90" r="310" fill="url(#fwCyanGlow)"/>
+  <circle cx="120" cy="390" r="250" fill="url(#fwIndigoGlow)"/>
+
+  <!-- Cyber Matrix Grid -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Main Card Frame -->
+  <rect x="70" y="55" width="660" height="340" rx="24" fill="url(#fwCardGrad)" stroke="rgba(6, 182, 212, 0.38)" stroke-width="1.5"/>
+
+  <!-- Badge Island -->
+  <g transform="translate(110, 95)">
+    <rect width="305" height="32" rx="16" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(6, 182, 212, 0.45)" stroke-width="1"/>
+    <circle cx="18" cy="16" r="4" fill="#22d3ee"/>
+    <text x="32" y="20.5" fill="#a5f3fc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.8">INTERACTIVE LAB // 3D IT SIMULATOR</text>
+  </g>
+
+  <!-- Title -->
+  <text x="110" y="186" fill="#ffffff" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="35" font-weight="800" letter-spacing="-0.5">Fieldwork IT Lab</text>
+
+  <!-- Subtitle -->
+  <text x="110" y="226" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="400">
+    <tspan x="110" dy="0">18-mission CSS 3D computer organization, Boolean</tspan>
+    <tspan x="110" dy="22">logic gate &amp; database simulation study desk.</tspan>
+  </text>
+
+  <!-- Tech Badges -->
+  <g transform="translate(110, 286)">
+    <rect x="0" y="0" width="98" height="32" rx="9" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.14)"/>
+    <text x="13" y="20" fill="#22d3ee" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">JavaScript</text>
+
+    <rect x="108" y="0" width="76" height="32" rx="9" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.14)"/>
+    <text x="122" y="20" fill="#a5b4fc" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">CSS 3D</text>
+
+    <rect x="194" y="0" width="84" height="32" rx="9" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.14)"/>
+    <text x="208" y="20" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">Node.js</text>
+
+    <rect x="288" y="0" width="124" height="32" rx="9" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.14)"/>
+    <text x="299" y="20" fill="#67e8f9" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">Playwright E2E</text>
+  </g>
+
+  <!-- Right Graphic: Logic Gate Circuit Symbol -->
+  <g transform="translate(558, 152)">
+    <circle cx="64" cy="64" r="56" fill="rgba(6, 182, 212, 0.06)" stroke="rgba(6, 182, 212, 0.30)" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <!-- Input lines -->
+    <line x1="20" y1="48" x2="40" y2="48" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="20" y1="80" x2="40" y2="80" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- AND Gate body -->
+    <path d="M40 34 H64 C82 34 94 47 94 64 C94 81 82 94 64 94 H40 Z" fill="rgba(6, 182, 212, 0.14)" stroke="#22d3ee" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Output line -->
+    <line x1="94" y1="64" x2="112" y2="64" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="112" cy="64" r="4" fill="#22d3ee"/>
+  </g>
+</svg>

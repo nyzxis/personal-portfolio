@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="cbBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09070c"/>
+      <stop offset="50%" stop-color="#191016"/>
+      <stop offset="100%" stop-color="#05060b"/>
+    </linearGradient>
+    <linearGradient id="cbCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(249, 115, 22, 0.14)"/>
+      <stop offset="50%" stop-color="rgba(56, 189, 248, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(12, 10, 18, 0.90)"/>
+    </linearGradient>
+    <radialGradient id="cbOrangeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cbSkyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#cbBgGrad)"/>
+  <circle cx="680" cy="90" r="310" fill="url(#cbOrangeGlow)"/>
+  <circle cx="120" cy="390" r="260" fill="url(#cbSkyGlow)"/>
+
+  <!-- Cyber Matrix Grid -->
+  <g opacity="0.08" stroke="#f97316" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Main Card Frame -->
+  <rect x="70" y="55" width="660" height="340" rx="24" fill="url(#cbCardGrad)" stroke="rgba(249, 115, 22, 0.4)" stroke-width="1.5"/>
+
+  <!-- Badge Island -->
+  <g transform="translate(110, 95)">
+    <rect width="325" height="32" rx="16" fill="rgba(249, 115, 22, 0.12)" stroke="rgba(249, 115, 22, 0.45)" stroke-width="1"/>
+    <circle cx="18" cy="16" r="4" fill="#f97316"/>
+    <text x="32" y="20.5" fill="#fdba74" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.8">CLOUD SECURITY // IAM PRIVILEGE GRAPH</text>
+  </g>
+
+  <!-- Title -->
+  <text x="110" y="186" fill="#ffffff" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="35" font-weight="800" letter-spacing="-0.5">CloudBlast Analyzer</text>
+
+  <!-- Subtitle -->
+  <text x="110" y="226" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="400">
+    <tspan x="110" dy="0">Multi-cloud IAM privilege escalation graph &amp;</tspan>
+    <tspan x="110" dy="22">toxic permission combination detector.</tspan>
+  </text>
+
+  <!-- Tech Badges -->
+  <g transform="translate(110, 286)">
+    <rect x="0" y="0" width="88" height="32" rx="9" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.14)"/>
+    <text x="14" y="20" fill="#fb923c" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">React 19</text>
+
+    <rect x="98" y="0" width="102" height="32" rx="9" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.14)"/>
+    <text x="112" y="20" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">TypeScript</text>
+
+    <rect x="210" y="0" width="105" height="32" rx="9" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.14)"/>
+    <text x="223" y="20" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">Tailwind v4</text>
+
+    <rect x="325" y="0" width="112" height="32" rx="9" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.14)"/>
+    <text x="338" y="20" fill="#fdba74" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">AWS &amp; GCP IAM</text>
+  </g>
+
+  <!-- Right Graphic: Privilege Escalation Topology Graph -->
+  <g transform="translate(558, 152)">
+    <circle cx="66" cy="66" r="58" fill="rgba(249, 115, 22, 0.06)" stroke="rgba(249, 115, 22, 0.28)" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <!-- Edges -->
+    <line x1="28" y1="92" x2="66" y2="54" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 3"/>
+    <line x1="66" y1="54" x2="104" y2="34" stroke="#f97316" stroke-width="2.5"/>
+    <line x1="66" y1="54" x2="104" y2="96" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <!-- Nodes -->
+    <circle cx="28" cy="92" r="11" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="66" cy="54" r="13" fill="#0f172a" stroke="#fb923c" stroke-width="2.2"/>
+    <circle cx="104" cy="34" r="13" fill="rgba(249, 115, 22, 0.25)" stroke="#f97316" stroke-width="2.5"/>
+    <circle cx="104" cy="96" r="9" fill="#0f172a" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Root Crown Dot -->
+    <circle cx="104" cy="34" r="4.5" fill="#f97316"/>
+    <circle cx="28" cy="92" r="3.5" fill="#38bdf8"/>
+  </g>
+</svg>
