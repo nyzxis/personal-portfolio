@@ -542,12 +542,6 @@ export default function About() {
                             <p>• Built with FastAPI, BeautifulSoup4, React 19, and dual Cyber/Minimalist themes at vulnshield.vercel.app</p>
                         </div>
                         <div class="project">
-                            <h3>CloudBlast — IAM Toxic Combination &amp; Privilege Escalation Graph</h3>
-                            <p>• Built an interactive cloud security topology visualizer modeling AWS and GCP IAM lateral movement paths</p>
-                            <p>• Implemented toxic permission combination detection, animated exploit traces, and least-privilege JSON diffs</p>
-                            <p>• Built with React 19, TypeScript, and Tailwind CSS v4 at cloudblast-nyzxis.vercel.app</p>
-                        </div>
-                        <div class="project">
                             <h3>SlopGuard — AI Package Hallucination &amp; Supply Chain Scanner</h3>
                             <p>• Engineered a supply chain security auditor detecting phantom AI-hallucinated dependencies across npm, PyPI, and Cargo</p>
                             <p>• Added typosquatting checks, malicious lifecycle hook detection, and defensive claim script generation</p>
@@ -588,18 +582,6 @@ export default function About() {
                             <p>• Built a calm, focused study dock with curated notes, self-tests, and Pomodoro timer</p>
                             <p>• Created clean, responsive UI with smooth interactions using HTML, CSS, and JavaScript</p>
                             <p>• Deployed on Vercel at studyitpi.vercel.app</p>
-                        </div>
-                        <div class="project">
-                            <h3>Just Lil Daisy — Custom Cake &amp; Cupcake Studio</h3>
-                            <p>• Designed a bespoke artisanal bakery storefront featuring an interactive custom cake and cupcake configurator</p>
-                            <p>• Integrated live pricing estimation, Anime.js micro-interactions, and 1-click WhatsApp order generation</p>
-                            <p>• Built with React 18, Tailwind CSS, and Anime.js</p>
-                        </div>
-                        <div class="project">
-                            <h3>Personal Portfolio Website</h3>
-                            <p>• Developed an interactive 3D portfolio using React 19, Three.js, and Tailwind CSS</p>
-                            <p>• Implemented interactive physics cards and animations</p>
-                            <p>• Optimized for fast performance and mobile responsiveness</p>
                         </div>
                     </div>
                 </section>
@@ -885,7 +867,7 @@ export default function About() {
               </p>
 
               <p>
-                My featured projects include <strong>APIShield</strong> (an automated REST API pentesting suite &amp; OWASP Top 10 security scanner built with FastAPI, PostgreSQL, and React 19), <strong>MalGuard</strong> (an AI-powered static binary forensics &amp; malware classification engine built with Scikit-learn and FastAPI), <strong>VulnShield</strong> (an automated web vulnerability scanner &amp; security posture auditor built with FastAPI and React 19), <strong>CloudBlast</strong> (an interactive multi-cloud IAM privilege escalation graph &amp; toxic combination detector), <strong>SlopGuard</strong> (an AI package hallucination &amp; software supply chain auditor), <strong>PacketScope</strong> (a Wireshark-style PCAP deep packet &amp; TLS 1.3 inspector), <strong>PromptShield</strong> (an adversarial LLM red-teaming &amp; jailbreak fuzzer), <strong>KeyVault</strong> (a zero-knowledge password security auditor &amp; k-Anonymity breach detection platform), <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React), <strong>Fieldwork IT Lab</strong> (an 18-mission CSS 3D hardware, Boolean logic gate &amp; database simulation desk), <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused), and <strong>Just Lil Daisy</strong> (an interactive custom cake &amp; cupcake studio built with React and Anime.js).
+                My featured projects include <strong>APIShield</strong> (an automated REST API pentesting suite &amp; OWASP Top 10 security scanner built with FastAPI, PostgreSQL, and React 19), <strong>MalGuard</strong> (an AI-powered static binary forensics &amp; malware classification engine built with Scikit-learn and FastAPI), <strong>VulnShield</strong> (an automated web vulnerability scanner &amp; security posture auditor built with FastAPI and React 19), <strong>SlopGuard</strong> (an AI package hallucination &amp; software supply chain auditor), <strong>PacketScope</strong> (a Wireshark-style PCAP deep packet &amp; TLS 1.3 inspector), <strong>PromptShield</strong> (an adversarial LLM red-teaming &amp; jailbreak fuzzer), <strong>KeyVault</strong> (a zero-knowledge password security auditor &amp; k-Anonymity breach detection platform), <strong>Phishing Detection AI</strong> (an ML cybersecurity system analyzing malicious URLs and phishing emails using Scikit-learn, Flask, and React), <strong>Fieldwork IT Lab</strong> (an 18-mission CSS 3D hardware, Boolean logic gate &amp; database simulation desk), and <strong>StudyIt</strong> (a productivity study dock designed to help students learn and stay focused).
               </p>
 
               <p>

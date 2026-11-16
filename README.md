@@ -54,7 +54,6 @@ Designed with an ultra-minimalist, dark-cyber editorial aesthetic, this site sho
 | **APIShield**<br><sub>OWASP API Top 10 Pentesting Engine</sub> | FastAPI • Python • PostgreSQL • React 19 • Requests | [🔗 Live Demo](https://apishield-pi.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/apishield) |
 | **MalGuard**<br><sub>AI Malware Classifier & PE Forensics</sub> | Scikit-learn • FastAPI • React 19 • Pandas • XAI | [🔗 Live Demo](https://malguard.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/malguard) |
 | **VulnShield**<br><sub>Automated Web Vulnerability Scanner</sub> | FastAPI • BeautifulSoup4 • React 19 • Heuristics | [🔗 Live Demo](https://vulnshield.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/vulnshield) |
-| **CloudBlast**<br><sub>IAM Toxic Combination & Privilege Escalation Graph</sub> | React 19 • TypeScript • Tailwind v4 • AWS/GCP IAM | [🔗 Live Demo](https://cloudblast-nyzxis.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/cloudblast) |
 | **SlopGuard**<br><sub>AI Package Hallucination & Supply Chain Scanner</sub> | React 19 • TypeScript • Tailwind v4 • Supply Chain | [🔗 Live Demo](https://slopguard-nyzxis.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/slopguard) |
 | **PacketScope**<br><sub>PCAP Deep Packet & TLS Handshake Inspector</sub> | React 19 • TypeScript • HTML5 Canvas • PCAP/TLS 1.3 | [🔗 Live Demo](https://packetscope.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/packetscope) |
 | **PromptShield**<br><sub>Adversarial LLM Red-Teaming & Jailbreak Fuzzer</sub> | React 19 • TypeScript • Tailwind v4 • Adversarial AI | [🔗 Live Demo](https://promptshield-nyzxis.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/promptshield) |
@@ -62,7 +61,6 @@ Designed with an ultra-minimalist, dark-cyber editorial aesthetic, this site sho
 | **PhishGuard**<br><sub>AI Phishing Detection System</sub> | Scikit-learn • Flask • React • PostgreSQL | [🔗 Live Demo](https://phishingdetector-nyzxis.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/phishing-detector) |
 | **Fieldwork IT Lab**<br><sub>3D Computer Organization & Database Sim Desk</sub> | JavaScript • CSS 3D • Node.js • Playwright E2E | [🔗 Live Demo](https://fieldwork-it-lab.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/fieldwork-it-lab) |
 | **StudyIt**<br><sub>Productivity & Study Workspace</sub> | Vanilla JavaScript • HTML5 • CSS3 | [🔗 Live Demo](https://studyitpi.vercel.app/) | [📁 GitHub](https://github.com/nyzxis/studyit) |
-| **Just Lil Daisy**<br><sub>Custom Cake & Cupcake Studio</sub> | React 18 • Tailwind CSS • Anime.js • WhatsApp API | [🔗 Live Demo](https://linktr.ee/justlildaisy) | [📁 GitHub](https://github.com/nyzxis/Justlildaisy) |
 
 ---
 
@@ -94,15 +92,13 @@ personal-portfolio/
 │       ├── apishield.svg
 │       ├── malguard.svg
 │       ├── vulnshield.svg
-│       ├── cloudblast.svg
 │       ├── slopguard.svg
 │       ├── packetscope.svg
 │       ├── promptshield.svg
 │       ├── keyvault.svg
 │       ├── phishguard.svg
 │       ├── fieldwork.svg
-│       ├── studyit.svg
-│       └── justlildaisy.svg
+│       └── studyit.svg
 ├── src/
 │   ├── components/
 │   │   ├── BandCard.tsx             # 3D interactive physics lanyard (R3F + Rapier)

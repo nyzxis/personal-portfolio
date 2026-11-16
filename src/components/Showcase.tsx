@@ -41,13 +41,6 @@ const projects = [
     live: "https://vulnshield.vercel.app/",
   },
   {
-    title: "CloudBlast // IAM Escalation Graph",
-    tech: "React 19 + TypeScript + Tailwind v4 + AWS/GCP IAM",
-    thumbnail: "/assets/cloudblast.svg",
-    github: "https://github.com/nyzxis/cloudblast",
-    live: "https://cloudblast-nyzxis.vercel.app/",
-  },
-  {
     title: "SlopGuard // Supply Chain Scanner",
     tech: "React 19 + TypeScript + Tailwind v4 + Supply Chain",
     thumbnail: "/assets/slopguard.svg",
@@ -95,20 +88,6 @@ const projects = [
     thumbnail: "/assets/studyit.svg",
     github: "https://github.com/nyzxis/studyit",
     live: "https://studyitpi.vercel.app/",
-  },
-  {
-    title: "Just Lil Daisy // Custom Cake Studio",
-    tech: "React 18 + Tailwind CSS + Anime.js + WhatsApp API",
-    thumbnail: "/assets/justlildaisy.svg",
-    github: "https://github.com/nyzxis/Justlildaisy",
-    live: "https://linktr.ee/justlildaisy",
-  },
-  {
-    title: "Personal Portfolio",
-    tech: "React + TypeScript + Tailwind",
-    thumbnail: "/assets/portfolio.svg",
-    github: "https://github.com/nyzxis/personal-portfolio",
-    live: "https://nyzxis.vercel.app/",
   },
 ];
 
